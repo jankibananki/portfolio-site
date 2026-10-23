@@ -1,0 +1,25 @@
+
+:root {
+  /* Backgrounds */
+  --color-background: #fff9fd;
+  --color-surface: #ffffff;
+  --color-soft-pink: #f7d4eb;
+  --color-soft-purple: #dccbf7;
+
+  /* Accents */
+  --color-primary: #ad8ad2;
+  --color-pink: #eaa5d0;
+
+  /* Text and borders */
+  --color-text: #483957;
+  --color-muted: #8b719c;
+  --color-border: #483957;
+
+  /* Retro effects */
+  --pixel-shadow: 4px 4px 0 var(--color-border);
+  --window-border: 2px solid var(--color-border);
+
+  /* Layout */
+  --content-width: 1200px;
+  --section-spacing: 100px;
+}

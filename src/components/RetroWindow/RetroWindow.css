@@ -1,0 +1,37 @@
+
+.retro-window {
+  background: var(--color-surface);
+  border: var(--window-border);
+  box-shadow: var(--pixel-shadow);
+}
+
+.retro-window__header {
+  background: var(--color-soft-purple);
+  border-bottom: var(--window-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 14px;
+  gap: 12px;
+}
+
+.retro-window__title {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.retro-window__controls {
+  display: flex;
+  gap: 12px;
+  color: var(--color-text);
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.retro-window__content {
+  padding: 24px;
+}
