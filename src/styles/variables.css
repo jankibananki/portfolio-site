@@ -23,3 +23,22 @@
   --content-width: 1200px;
   --section-spacing: 100px;
 }
+
+:root {
+  --bg: #08070c;
+  --bg-secondary: #100d15;
+
+  --accent: #d4b0f5;
+  --accent-muted: #a77bd4;
+
+  --text-primary: #e8e1ed;
+  --text-secondary: #a99bb5;
+
+  --border: #665276;
+  --border-bright: #b694d2;
+
+  --font-terminal: 'Space Mono', monospace;
+  --font-heading: 'Space Mono', monospace;
+
+  --content-width: 1440px;
+}

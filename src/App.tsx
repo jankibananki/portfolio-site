@@ -3,6 +3,8 @@ import { useCallback, useEffect, useState } from 'react';
 
 import BootSequence from './components/BootSequence/BootSequence';
 import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './sections/Hero/Hero';
 
 type AppPhase = 'boot' | 'welcome' | 'portfolio';
 
@@ -47,17 +49,12 @@ function App() {
   }
 
   return (
-    <main className="portfolio-placeholder">
-      <p className="portfolio-status">
-        &gt; SYSTEM INITIALIZED SUCCESSFULLY
-      </p>
-
-      <h1>Welcome to JANA.EXE</h1>
-
-      <p>
-        Portfolio loading complete.
-      </p>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
 
