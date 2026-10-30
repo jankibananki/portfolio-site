@@ -4,7 +4,8 @@
 h2 { font-size:clamp(19px,2.4vw,27px); letter-spacing:-.04em; font-weight:700; color:var(--accent); overflow-wrap:anywhere; }
 .section-heading > span { font-size:12px; color:var(--text-secondary); }
 .section-intro { font-size:14px; margin:5px 0 32px; }
-.project-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+.project-grid { display:grid; grid-template-columns:minmax(0,480px); gap:22px; }
+.projects-notice { margin:28px 0 0; max-width:64ch; font-size:14px; line-height:1.9; }
 .project-card { min-width:0; border:1px solid var(--border); transition:border-color .2s,background .2s; display:flex; flex-direction:column; }
 .project-card:hover { border-color:var(--accent-muted); background:var(--bg-secondary); }
 .project-preview { aspect-ratio:16/10; min-height:140px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:16px; background:var(--bg-secondary); border-bottom:1px solid var(--border); text-decoration:none; color:var(--text-secondary); text-align:center; font-size:12px; }

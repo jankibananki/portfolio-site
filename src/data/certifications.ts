@@ -15,7 +15,7 @@ export const completionLabels: Record<Certification['completionStatus'], string>
   completed: 'Completed',
 };
 
-// Titles and Cisco completion dates supplied by Jana.
+// Titles and completion dates supplied by Jana.
 // Add only confirmed issuers and real credential URLs. A URL is not a verification status.
 export const certifications: Certification[] = [
   {
@@ -45,23 +45,27 @@ export const certifications: Certification[] = [
   {
     id: 'python-essentials',
     title: 'Python Essentials',
+    issuer: 'Cisco Networking Academy',
     category: 'Programming',
-    completionStatus: 'not-confirmed',
-    details: 'Exact course title, level, and issuing organization are awaiting confirmation.',
+    completionStatus: 'completed',
+    completionYear: 2025,
+    details: 'Exact course title and level are awaiting confirmation.',
   },
   {
     id: 'linux-essentials',
     title: 'Linux Essentials',
+    issuer: 'Cisco Networking Academy',
     category: 'Systems',
-    completionStatus: 'not-confirmed',
-    details: 'Issuing organization is awaiting confirmation.',
+    completionStatus: 'completed',
+    completionYear: 2025,
   },
   {
     id: 'red-hat-do188',
     title: 'Red Hat OpenShift Development I: Introduction to Containers with Podman',
     issuer: 'Red Hat',
     category: 'DevOps',
-    completionStatus: 'not-confirmed',
+    completionStatus: 'completed',
+    completionYear: 2026,
     details: 'Course DO188, Version 4.18.',
   },
 ];

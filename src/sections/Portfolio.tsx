@@ -13,18 +13,19 @@ function Screenshots({ project }: { project: Project }) {
 export function HomeSections() {
  return <>
   <section id="projects" className="content-section" aria-labelledby="projects-heading">
-   <div className="section-heading"><h2 id="projects-heading">// featured_projects</h2><span>selected work / 01—03</span></div>
+   <div className="section-heading"><h2 id="projects-heading">// featured_projects</h2><span>selected work / 01</span></div>
    <p className="section-intro">Different ideas. Different tools. The same curiosity.</p>
-   <div className="project-grid">{projects.map(project => <article className="project-card" key={project.slug}>
+   <div className="project-grid">{projects.filter(project => project.slug === 'gravebloom').map(project => <article className="project-card" key={project.slug}>
     <a className="project-preview" href={`#/projects/${project.slug}`} aria-label={`Explore ${project.title}`}>
      {project.screenshots[0] ? <img src={project.screenshots[0].src} alt={project.screenshots[0].alt} loading="lazy" /> : <><span aria-hidden="true">[ screenshot pending ]</span><small>reserved for actual project imagery</small></>}
     </a>
     <div className="project-copy"><span className="eyebrow">{project.category}</span><h3><a href={`#/projects/${project.slug}`}>{project.title}</a></h3><p>{project.description}</p><Tags items={project.technologies} /><a className="project-link" href={`#/projects/${project.slug}`}>explore project <span aria-hidden="true">↗</span><span className="sr-only">: {project.title}</span></a></div>
    </article>)}</div>
+   <p className="projects-notice">&gt; Other projects are currently available only on my <a href="https://github.com/jankibananki">GitHub profile ↗</a>.</p>
   </section>
   <section id="about" className="content-section about-section" aria-labelledby="about-heading">
    <div><span className="eyebrow">a person behind the terminal</span><h2 id="about-heading">// about_me.txt</h2><p className="about-name">Jana Marković<span aria-hidden="true"> ✦</span></p><span className="eyebrow">Niš, Serbia / Computer Science</span></div>
-   <div className="about-copy"><p>Hi, I'm Jana, a Computer Science student at the Faculty of Electronic Engineering, University of Niš, Serbia.</p><p>I'm curious about how things work—and what happens when you build something a little unusual. My interests move between AI and machine learning, cybersecurity, software development, game development, art, and creative coding.</p><p>I'm ambitious, creative, and always excited to learn something new. Away from the keyboard, I have five dogs. So there's usually a little chaos behind the code.</p><p className="personal-note">+ curiosity<br />+ imagination<br />+ five very good dogs</p></div>
+   <div className="about-copy"><p>Hi, I'm Jana, a Computer Science student at the Faculty of Electronic Engineering, University of Niš, Serbia.</p><p>I'm curious about how things work—and what happens when you build something a little unusual. My interests move between AI and machine learning, cybersecurity, software development, game development, art, and creative coding.</p><p>I'm ambitious, creative, and always excited to learn something new.</p><p className="personal-note">+ curiosity<br />+ imagination</p></div>
   </section>
   <section id="skills" className="content-section" aria-labelledby="skills-heading">
    <div className="section-heading"><h2 id="skills-heading">// skills.exe</h2><span>tools &amp; things I'm exploring</span></div>

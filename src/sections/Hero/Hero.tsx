@@ -10,7 +10,7 @@ export default function Hero() {
    <div className="hero-portrait-area" role="img" aria-label="ASCII portrait of Jana">
     <pre className="hero-portrait" aria-hidden="true" style={{ '--portrait-columns': portrait.columns, '--portrait-rows': portrait.rows } as CSSProperties}>{portrait.text}</pre>
    </div>
-   <div className="hero-ascii-footer"><span>LESKOVAC, SRB</span><span>✦</span><span>CS STUDENT</span></div>
+   <div className="hero-ascii-footer"><span>✦</span><span>CS STUDENT</span></div>
   </div>
   <div className="hero-information">
    <span className="eyebrow">// welcome.exe</span>
