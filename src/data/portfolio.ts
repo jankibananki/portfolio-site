@@ -15,7 +15,7 @@ export const projects: Project[] = [
   features: ['Witch protagonist and top-down exploration', 'Magical combat and enemy encounters', 'Different forest environments', 'Boss encounter'],
   screenshots: [{ src: '/projects/gravebloom-logo.png', alt: 'Gravebloom logo with a witch hat, flowers, and a skull' }],
   github: 'https://github.com/jankibananki/hci-gravebloom-top-down-2D-pixel-art-game',
-  game: { url: '/games/gravebloom/index.html', controls: [] },
+  game: { url: '/games/gravebloom/index.html', controls: ['Move: WASD', 'Shoot: left mouse button', 'Shield: right mouse button', 'Ultimate: Space'] },
  },
  {
   slug: 'chloromnesis', title: 'Chloromnesis', category: '02 / MACHINE LEARNING',
