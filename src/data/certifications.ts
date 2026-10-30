@@ -15,8 +15,6 @@ export const completionLabels: Record<Certification['completionStatus'], string>
   completed: 'Completed',
 };
 
-// Titles and completion dates supplied by Jana.
-// Add only confirmed issuers and real credential URLs. A URL is not a verification status.
 export const certifications: Certification[] = [
   {
     id: 'ccna-1',

@@ -1,7 +1,5 @@
 import portraitAscii from '../../assets/ascii/portrait.txt?raw';
 
-// Crop only the shared blank margin; preserve every visible character and
-// each row's relative indentation. The original asset remains untouched.
 const sourceRows = portraitAscii.replace(/\r/g, '').split('\n');
 const firstRow = sourceRows.findIndex(row => /\S/.test(row));
 const lastRow = sourceRows.findLastIndex(row => /\S/.test(row));

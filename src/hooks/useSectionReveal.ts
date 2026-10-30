@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import type { RefObject } from 'react';
 
-// Content starts visible. Animate only intersecting sections; unsupported APIs
-// or initialization failures leave the document readable.
 export default function useSectionReveal(
   root: RefObject<HTMLElement | null>,
   enabled: boolean,
@@ -40,7 +38,6 @@ export default function useSectionReveal(
             animation.onfinish = () => animations.delete(animation);
             animation.oncancel = () => animations.delete(animation);
           } catch {
-            // Native animation is optional; the base styles are already visible.
           }
         }
       }, { threshold: 0, rootMargin: '0px 0px -24px 0px' });

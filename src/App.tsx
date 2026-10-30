@@ -19,7 +19,7 @@ export default function App() {
  const [route, setRoute] = useState(() => window.location.hash);
  const finishBoot = useCallback(() => setPhase('welcome'), []);
  const finishWelcome = useCallback(() => {
-  try { sessionStorage.setItem('jana-booted', 'true'); } catch { /* Continue if storage is unavailable. */ }
+  try { sessionStorage.setItem('jana-booted', 'true'); } catch {  }
   setPhase('portfolio');
  }, []);
  useEffect(() => {

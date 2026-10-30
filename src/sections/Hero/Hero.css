@@ -28,7 +28,6 @@
   justify-content: center;
   isolation: isolate;
 }
-/* Small corner marks and static scanlines stay inside the artwork area. */
 .hero-portrait-area::before,
 .hero-portrait-area::after { content: ''; position: absolute; pointer-events: none; }
 .hero-portrait-area::before {
@@ -51,8 +50,6 @@
   flex-shrink: 0;
   width: max-content;
   font-family: var(--font-terminal);
-  /* Courier's character advance is .6em; .61 leaves a small rounding margin.
-     Fit both container dimensions without transforms or cropping the text. */
   font-size: min(
     calc((100cqw - 24px) / (var(--portrait-columns) * .61)),
     calc((100cqh - 32px) / var(--portrait-rows))

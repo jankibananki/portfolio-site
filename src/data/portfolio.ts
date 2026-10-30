@@ -5,7 +5,6 @@ export type Project = {
  technologies: string[]; features: string[]; screenshots: Screenshot[];
  github?: string; demo?: string; game?: GameBuild;
 };
-// Add only real screenshots and confirmed repository/demo URLs.
 export const projects: Project[] = [
  {
   slug: 'gravebloom', title: 'Gravebloom', category: '01 / GAME DEVELOPMENT',
@@ -40,7 +39,6 @@ export const skillGroups = [
  { title: 'Systems & platforms', items: ['Oracle Database', 'Windows Forms', 'Vite'] },
  { title: 'Areas of interest', items: ['AI / ML', 'Cybersecurity', 'Game development', 'Software engineering', 'Creative coding'] },
 ];
-// Empty values render as plain text, not dead links.
 export const contacts: { label: string; href?: string }[] = [
  { label: 'GitHub', href: 'https://github.com/jankibananki' }, { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jana-markovi%C4%87-870232263/' }, { label: 'markovicjana@elfak.rs', href: 'mailto:markovicjana@elfak.rs' },
 ];

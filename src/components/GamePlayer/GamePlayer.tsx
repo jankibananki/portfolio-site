@@ -31,7 +31,6 @@ export default function GamePlayer({ title, build }: GamePlayerProps) {
     setStatus(current => current === 'error' || current === 'ready' ? current : 'initializing');
    } else if (event.data.type === 'ready') {
     setStatus(current => current === 'error' ? current : 'ready');
-    // Keep input focus inside the game unless the visitor has moved elsewhere.
     if (document.activeElement === playButton.current || document.activeElement === frame.current) {
      frame.current?.focus();
     }
