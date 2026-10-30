@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Original Unity inputs; deploy the extracted public assets instead.
+/GraveBloomWebBuild.zip
+/GraveBloomCover.png
+
+/GraveBloomReleaseBuild.zip

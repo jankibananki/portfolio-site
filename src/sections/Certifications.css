@@ -1,0 +1,68 @@
+.certification-log {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+.certification-log > li { border-bottom: 1px solid var(--border); }
+.certification-record summary {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) auto 20px;
+  align-items: center;
+  gap: 20px;
+  min-height: 88px;
+  padding: 20px 12px;
+  cursor: pointer;
+  list-style: none;
+  transition: background .2s;
+}
+.certification-record summary::-webkit-details-marker { display: none; }
+.certification-record summary:hover,
+.certification-record[open] summary { background: var(--bg-secondary); }
+.certification-index { font-size: 12px; color: var(--accent-muted); }
+.certification-identity { min-width: 0; }
+.certification-title {
+  display: block;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.certification-issuer {
+  display: block;
+  margin-top: 5px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.certification-category { color: var(--accent-muted); font-size: 12px; }
+.certification-toggle { color: var(--accent); text-align: center; font-size: 16px; }
+.certification-toggle::before { content: '+'; }
+.certification-record[open] .certification-toggle::before { content: '−'; }
+.certification-details {
+  padding: 8px 52px 24px 70px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.certification-details dl { margin: 0 0 12px; }
+.certification-details dl > div {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 14px;
+  padding: 3px 0;
+}
+.certification-details dt { color: var(--accent-muted); }
+.certification-details dd { margin: 0; overflow-wrap: anywhere; }
+.certification-details p { margin-bottom: 8px; }
+.certification-credential { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 600px) {
+  .certification-record summary {
+    grid-template-columns: 28px minmax(0, 1fr) 18px;
+    gap: 8px 12px;
+    padding: 18px 4px;
+  }
+  .certification-identity { grid-column: 2; }
+  .certification-toggle { grid-column: 3; grid-row: 1; }
+  .certification-category { grid-column: 2; grid-row: 2; }
+  .certification-details { padding: 4px 12px 20px 44px; }
+  .certification-details dl > div { grid-template-columns: 1fr; gap: 0; margin-bottom: 8px; }
+}

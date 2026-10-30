@@ -1,33 +1,10 @@
-
 import './Navbar.css';
-
-const links = [
-  { label: 'home', href: '#home' },
-  { label: 'about', href: '#about' },
-  { label: 'projects', href: '#projects' },
-  { label: 'skills', href: '#skills' },
-  { label: 'contact', href: '#contact' },
-];
-
+const links = ['home', 'projects', 'about', 'skills', 'certifications', 'contact'];
 export default function Navbar() {
-  return (
-    <header className="site-navbar">
-      <a href="#home" className="site-logo">
-        ✦ jana.exe<span className="logo-cursor">_</span>
-      </a>
-
-      <nav aria-label="Main navigation" className="site-nav-links">
-        {links.map((link, index) => (
-          <a key={link.href} href={link.href}>
-            <span>[0{index + 1}]</span> {link.label}
-          </a>
-        ))}
-      </nav>
-
-      <div className="site-system-status">
-        <span>user: jana</span>
-        <span>status: online <b>■</b></span>
-      </div>
-    </header>
-  );
+ return <header className="site-navbar">
+  <a href="#home" className="site-logo" aria-label="Jana.exe home">✦ jana.exe<span className="cursor" aria-hidden="true">_</span></a>
+  <nav aria-label="Main navigation" className="site-nav-links">
+   {links.map((label, index) => <a key={label} href={`#${label}`}><span aria-hidden="true">[0{index + 1}]</span> {label}</a>)}
+  </nav>
+ </header>;
 }

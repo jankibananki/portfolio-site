@@ -35,7 +35,7 @@
   width: min(100%, 780px);
   min-height: 490px;
 
-  background: #0c0a10;
+  background: #100d15;
   border: 1px solid #a77bd4;
 
   box-shadow:
@@ -95,7 +95,7 @@
 }
 
 .boot-line--success {
-  color: #a7e2c5;
+  color: #d4b0f5;
 }
 
 .boot-cursor {
@@ -173,3 +173,7 @@
     transition: none;
   }
 }
+
+.boot-screen { overflow-y:auto; align-items:safe center; }
+.boot-terminal { margin-block:auto; }
+.boot-skip { min-height:44px; }
