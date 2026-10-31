@@ -73,7 +73,7 @@ export default function GamePlayer({ title, build }: GamePlayerProps) {
  return <section className="game-section" aria-labelledby="game-heading">
   <h2 id="game-heading">// play_game</h2>
   <p>Play {title} in your browser. The game downloads about 100 MB when you press Play.</p>
-  <p className="game-desktop-note">Desktop play with a keyboard and mouse is recommended. Touch controls are not confirmed. For editor previews, open this portfolio in Chrome or Edge; embedded previews may not support the game audio.</p>
+  <p className="game-desktop-note">Desktop play with a keyboard and mouse is recommended.</p>
   <div className="game-player" ref={container}>
    {build && playing ? <>
     <iframe ref={frame} title={`${title} — Play Game`} src={build.url}
